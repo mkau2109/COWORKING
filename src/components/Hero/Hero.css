@@ -1,0 +1,76 @@
+.hero-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  width: 100%;
+}
+
+.background-carousel .carousel-item {
+  width: 100%;
+  height: 100vh;
+  transition: transform 0.5s ease-in-out; /* Ensure smooth sliding transition */
+}
+
+.carousel-bg {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* Dark transparent overlay */
+.carousel-bg::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65); /* Black with 50% opacity */
+  z-index: 1;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2; /* Higher z-index so it sits above the overlay */
+  color: white;
+  width: 100%;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.button-book {
+  width: 16%;
+  background-color: lightcoral;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+
+  .button-book {
+    width: 50%;
+  }
+}

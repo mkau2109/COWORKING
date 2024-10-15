@@ -1,0 +1,64 @@
+.about-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.about-card {
+  border: none;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-card:hover {
+  transform: scale(1.05);
+}
+
+.about-card img {
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-card:hover img {
+  transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.about-card-title {
+  font-weight: 700;
+  color: #ff4500; /* Orange color */
+}
+
+.about-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.about-card a {
+  background: lightcoral;
+  color: azure;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.about-card a:hover {
+  background: lightcoral; /* Keep consistent on hover */
+  color: azure;
+}
+
+.shadow-sm {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .about-card img {
+    height: 200px; /* Smaller image height for mobile */
+  }
+  /* Gap between cards */
+.g-4 {
+  gap: 1.5rem; /* Adjust gap size as needed */
+}
+}
+
+

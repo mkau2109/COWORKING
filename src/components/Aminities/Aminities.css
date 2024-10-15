@@ -1,0 +1,69 @@
+.amenities-section {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+  }
+  
+  .section-header {
+    margin-bottom: 40px;
+  }
+  
+  .section-header h2 {
+    font-size: 2.5rem;
+    color: #ff8800;
+    font-weight: bold;
+  }
+  
+  .section-header p {
+    font-size: 1.2rem;
+    color: #6c757d;
+  }
+  
+  .slider {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+  
+  .slider-track {
+    display: flex;
+    animation: scroll 20s linear infinite; /* Infinite sliding animation */
+    transition-timing-function: ease-in-out;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%); /* Slide all the way to the end */
+    }
+  }
+  
+  .slider-item {
+    flex: 0 0 20%; /* Show 5 items at a time (20% width each) */
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .amenity-icon {
+    font-size: 2.5rem;
+    color: #ff8800;
+    background-color: #f0f0f0;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+  }
+  
+  .slider-item h5 {
+    font-size: 1.1rem;
+    color: #343a40;
+    margin-top: 10px;
+  }
+  
+  .slider-item i {
+    font-size: 2rem;
+  }
+  

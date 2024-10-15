@@ -1,0 +1,25 @@
+.location-form {
+    border: 1px solid rgb(253, 250, 244);
+    margin: 21px 34px 31px 35px;
+    background: floralwhite;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  
+}
+
+.location-card:hover {
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+}
+
+.location-card iframe {
+  border: none;
+  width: 100%;
+  height: 300px;
+}
+
+@media (max-width: 768px) {
+  .location-section {
+    padding: 20px;
+  }
+}
